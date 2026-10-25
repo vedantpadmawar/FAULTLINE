@@ -1,0 +1,7 @@
+{
+  "metric_id": "M08_identity_closure_rate",
+  "value": 100.0,
+  "unit": "percent",
+  "total_checks": 800,
+  "passed_checks": 800
+}

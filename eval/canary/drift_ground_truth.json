@@ -1,0 +1,32 @@
+[
+  {
+    "id": "GT_01",
+    "type": "removed",
+    "heading": "Note 24: Movement of Stage 2 Assets and Significant Increase in Credit Risk",
+    "is_drift": true
+  },
+  {
+    "id": "GT_02",
+    "type": "added",
+    "heading": "Note 38: Derivative Instruments and Credit Default Swap Exposures",
+    "is_drift": true
+  },
+  {
+    "id": "GT_03",
+    "type": "redefined",
+    "heading": "Note 18: Credit Risk and Impairment Policy for Retail Portfolios",
+    "is_drift": true
+  },
+  {
+    "id": "GT_04",
+    "type": "cosmetic_renumbering",
+    "heading": "Statutory Reserve Allocations",
+    "is_drift": false
+  },
+  {
+    "id": "GT_05",
+    "type": "cosmetic_number_update",
+    "heading": "Related Party Transactions",
+    "is_drift": false
+  }
+]

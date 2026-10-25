@@ -1,0 +1,25 @@
+{
+  "M09_fault_recall": {
+    "value": 100.0,
+    "unit": "percent",
+    "correct_recalled": 20,
+    "total_fault_lenders": 20
+  },
+  "M10_false_positive_rate": {
+    "value": 0.0,
+    "unit": "percent",
+    "false_positives": 0,
+    "total_clean_lenders": 20
+  },
+  "M11_fault_start_error": {
+    "value": 0.0,
+    "unit": "periods",
+    "n_errors": 20
+  },
+  "M07_abstain_correctness": {
+    "value": 100.0,
+    "unit": "percent",
+    "passed": 10,
+    "total": 10
+  }
+}

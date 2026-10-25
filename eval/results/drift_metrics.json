@@ -1,0 +1,14 @@
+{
+  "M12_drift_recall": {
+    "value": 100.0,
+    "unit": "percent",
+    "recalled": 3,
+    "total_drift": 3
+  },
+  "M13_drift_false_alarm_rate": {
+    "value": 0.0,
+    "unit": "percent",
+    "false_alarms": 0,
+    "total_cosmetic": 2
+  }
+}

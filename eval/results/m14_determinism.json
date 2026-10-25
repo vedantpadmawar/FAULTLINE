@@ -1,0 +1,8 @@
+{
+  "metric_id": "M14_determinism",
+  "value": 100.0,
+  "unit": "percent",
+  "total_compared": 3270,
+  "identical": 3270,
+  "gate_passed": true
+}

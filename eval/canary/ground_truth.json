@@ -1,0 +1,402 @@
+{
+  "SYNTH_01": {
+    "lender_id": "SYNTH_01",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_02": {
+    "lender_id": "SYNTH_02",
+    "profile": "nbfc",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_03": {
+    "lender_id": "SYNTH_03",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_04": {
+    "lender_id": "SYNTH_04",
+    "profile": "nbfc",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_05": {
+    "lender_id": "SYNTH_05",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_06": {
+    "lender_id": "SYNTH_06",
+    "profile": "nbfc",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_07": {
+    "lender_id": "SYNTH_07",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_08": {
+    "lender_id": "SYNTH_08",
+    "profile": "nbfc",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_09": {
+    "lender_id": "SYNTH_09",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_10": {
+    "lender_id": "SYNTH_10",
+    "profile": "nbfc",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_11": {
+    "lender_id": "SYNTH_11",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_12": {
+    "lender_id": "SYNTH_12",
+    "profile": "nbfc",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_13": {
+    "lender_id": "SYNTH_13",
+    "profile": "bank",
+    "archetype": "clean_standard",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_14": {
+    "lender_id": "SYNTH_14",
+    "profile": "nbfc",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_15": {
+    "lender_id": "SYNTH_15",
+    "profile": "bank",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_16": {
+    "lender_id": "SYNTH_16",
+    "profile": "nbfc",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_17": {
+    "lender_id": "SYNTH_17",
+    "profile": "bank",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_18": {
+    "lender_id": "SYNTH_18",
+    "profile": "nbfc",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_19": {
+    "lender_id": "SYNTH_19",
+    "profile": "bank",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_20": {
+    "lender_id": "SYNTH_20",
+    "profile": "nbfc",
+    "archetype": "clean_fast_grower",
+    "has_fault": false,
+    "fault_type": null,
+    "fault_engine": null,
+    "fault_start_idx": null,
+    "fault_start_period": null
+  },
+  "SYNTH_21": {
+    "lender_id": "SYNTH_21",
+    "profile": "bank",
+    "archetype": "denominator_masking",
+    "has_fault": true,
+    "fault_type": "denominator_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_22": {
+    "lender_id": "SYNTH_22",
+    "profile": "nbfc",
+    "archetype": "denominator_masking",
+    "has_fault": true,
+    "fault_type": "denominator_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_23": {
+    "lender_id": "SYNTH_23",
+    "profile": "bank",
+    "archetype": "denominator_masking",
+    "has_fault": true,
+    "fault_type": "denominator_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_24": {
+    "lender_id": "SYNTH_24",
+    "profile": "nbfc",
+    "archetype": "denominator_masking",
+    "has_fault": true,
+    "fault_type": "denominator_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_25": {
+    "lender_id": "SYNTH_25",
+    "profile": "bank",
+    "archetype": "denominator_masking",
+    "has_fault": true,
+    "fault_type": "denominator_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_26": {
+    "lender_id": "SYNTH_26",
+    "profile": "nbfc",
+    "archetype": "writeoff_masking",
+    "has_fault": true,
+    "fault_type": "writeoff_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_27": {
+    "lender_id": "SYNTH_27",
+    "profile": "bank",
+    "archetype": "writeoff_masking",
+    "has_fault": true,
+    "fault_type": "writeoff_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_28": {
+    "lender_id": "SYNTH_28",
+    "profile": "nbfc",
+    "archetype": "writeoff_masking",
+    "has_fault": true,
+    "fault_type": "writeoff_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_29": {
+    "lender_id": "SYNTH_29",
+    "profile": "bank",
+    "archetype": "writeoff_masking",
+    "has_fault": true,
+    "fault_type": "writeoff_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_30": {
+    "lender_id": "SYNTH_30",
+    "profile": "nbfc",
+    "archetype": "writeoff_masking",
+    "has_fault": true,
+    "fault_type": "writeoff_masking",
+    "fault_engine": "quality",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_31": {
+    "lender_id": "SYNTH_31",
+    "profile": "bank",
+    "archetype": "funding_shift",
+    "has_fault": true,
+    "fault_type": "funding_shift",
+    "fault_engine": "funding",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_32": {
+    "lender_id": "SYNTH_32",
+    "profile": "nbfc",
+    "archetype": "funding_shift",
+    "has_fault": true,
+    "fault_type": "funding_shift",
+    "fault_engine": "funding",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_33": {
+    "lender_id": "SYNTH_33",
+    "profile": "bank",
+    "archetype": "funding_shift",
+    "has_fault": true,
+    "fault_type": "funding_shift",
+    "fault_engine": "funding",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_34": {
+    "lender_id": "SYNTH_34",
+    "profile": "nbfc",
+    "archetype": "funding_shift",
+    "has_fault": true,
+    "fault_type": "funding_shift",
+    "fault_engine": "funding",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_35": {
+    "lender_id": "SYNTH_35",
+    "profile": "bank",
+    "archetype": "funding_shift",
+    "has_fault": true,
+    "fault_type": "funding_shift",
+    "fault_engine": "funding",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_36": {
+    "lender_id": "SYNTH_36",
+    "profile": "nbfc",
+    "archetype": "combined",
+    "has_fault": true,
+    "fault_type": "combined",
+    "fault_engine": "both",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_37": {
+    "lender_id": "SYNTH_37",
+    "profile": "bank",
+    "archetype": "combined",
+    "has_fault": true,
+    "fault_type": "combined",
+    "fault_engine": "both",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_38": {
+    "lender_id": "SYNTH_38",
+    "profile": "nbfc",
+    "archetype": "combined",
+    "has_fault": true,
+    "fault_type": "combined",
+    "fault_engine": "both",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_39": {
+    "lender_id": "SYNTH_39",
+    "profile": "bank",
+    "archetype": "combined",
+    "has_fault": true,
+    "fault_type": "combined",
+    "fault_engine": "both",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  },
+  "SYNTH_40": {
+    "lender_id": "SYNTH_40",
+    "profile": "nbfc",
+    "archetype": "combined",
+    "has_fault": true,
+    "fault_type": "combined",
+    "fault_engine": "both",
+    "fault_start_idx": 6,
+    "fault_start_period": "FY24-Q3"
+  }
+}

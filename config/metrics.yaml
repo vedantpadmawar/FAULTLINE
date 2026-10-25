@@ -1,0 +1,218 @@
+# direction: higher_better | lower_better | band
+# lower = worst acceptable (floor). target = plan. stretch = upper bound (beyond is best).
+metrics:
+  # ---- correctness ----
+  - id: M01_reconciliation_rate
+    what: computed ratios matching published ratios (bad-loan %, provision coverage, credit cost, shares) within max(0.5% of value, 1 rounding unit)
+    unit: percent
+    direction: higher_better
+    lower: 90
+    target: 95
+    stretch: 99
+    measure: eval/reconcile.py over >=4 lenders x >=6 periods
+
+  - id: M02_claim_grounding_rate
+    what: dossier claims with a live URL, page and a cached snippet containing the value
+    unit: percent
+    direction: higher_better
+    lower: 90
+    target: 97
+    stretch: 100
+    measure: eval/grounding.py re-opens each cached source and string-matches the snippet
+
+  - id: M03_unsupported_claims
+    what: claims with no ledger entry
+    unit: count
+    direction: lower_better
+    lower: 0
+    target: 0
+    stretch: 0
+    gate: true
+    measure: eval/grounding.py
+
+  - id: M04_llm_authored_numbers
+    what: numeric tokens in a dossier not inserted from the ledger
+    unit: count
+    direction: lower_better
+    lower: 0
+    target: 0
+    stretch: 0
+    gate: true
+    measure: tests/test_numbers_from_ledger.py
+
+  - id: M08_identity_closure_rate
+    what: accounting identities that hold (fault anatomy sum, funding shares sum to 100, roll-forward closes where disclosed)
+    unit: percent
+    direction: higher_better
+    lower: 90
+    target: 97
+    stretch: 100
+    measure: eval/identities.py
+
+  - id: M14_determinism
+    what: numeric outputs identical across two reruns from cache
+    unit: percent
+    direction: higher_better
+    lower: 100
+    target: 100
+    stretch: 100
+    gate: true
+    measure: eval/rerun_check.py
+
+  # ---- generality and honesty ----
+  - id: M05_lenders_end_to_end
+    what: companies completed with zero code changes (at least 1 bank, 1 NBFC, plus others)
+    unit: count
+    direction: higher_better
+    lower: 4
+    target: 6
+    stretch: 9
+    measure: eval/run_all.py (verify the NIFTY 50 Track A list at build time)
+
+  - id: M06_profiler_accuracy
+    what: bank / NBFC / other labelled correctly versus human labels
+    unit: percent
+    direction: higher_better
+    lower: 90
+    target: 100
+    stretch: 100
+    measure: eval/profiler_gold.yaml with >=10 companies including one insurer
+
+  - id: M07_abstain_correctness
+    what: planted missing-data cases where the system abstains instead of inventing a value
+    unit: percent
+    direction: higher_better
+    lower: 95
+    target: 100
+    stretch: 100
+    measure: eval/canary/missing_data.py
+
+  # ---- discovery power (canary lab on synthetic lenders) ----
+  - id: M09_fault_recall
+    what: planted faults detected with the right engine and fault start within +-1 period
+    unit: percent
+    direction: higher_better
+    lower: 70
+    target: 85
+    stretch: 95
+    measure: "eval/canary/run.py (types: denominator_masking, writeoff_masking, funding_shift, combined)"
+
+  - id: M10_false_positive_rate
+    what: clean AND healthy-fast-growth lenders that wrongly publish a finding
+    unit: percent
+    direction: lower_better
+    lower: 20
+    target: 10
+    stretch: 5
+    measure: eval/canary/run.py (negative controls include fast but healthy growers)
+
+  - id: M11_fault_start_error
+    what: median absolute error in periods of detected fault start
+    unit: periods
+    direction: lower_better
+    lower: 1.0
+    target: 0.5
+    stretch: 0
+    measure: eval/canary/run.py
+
+  - id: M12_drift_recall
+    what: planted disclosure changes found (table dropped, definition changed) in synthetic note pairs
+    unit: percent
+    direction: higher_better
+    lower: 80
+    target: 90
+    stretch: 98
+    measure: eval/canary/drift.py
+
+  - id: M13_drift_false_alarm_rate
+    what: cosmetic edits (reformatting, renumbering, number updates) wrongly reported as drift
+    unit: percent
+    direction: lower_better
+    lower: 15
+    target: 8
+    stretch: 3
+    measure: eval/canary/drift.py
+
+  # ---- backcast on real history (cached public data) ----
+  - id: M15_backcast_spearman
+    what: Spearman correlation between the fault signal at t (data up to t only) and the change in reported bad-loan ratio over the next 4 periods
+    unit: correlation
+    direction: higher_better
+    lower: 0.15
+    target: 0.30
+    stretch: 0.50
+    measure: eval/backcast.py (report n lenders, n periods, bootstrap interval)
+
+  - id: M16_backcast_lift
+    what: Spearman of the fault signal minus Spearman of the plain reported-ratio trend (baseline)
+    unit: correlation_points
+    direction: higher_better
+    lower: 0.0
+    target: 0.05
+    stretch: 0.15
+    measure: eval/backcast.py
+
+  # ---- self-challenge ----
+  - id: M17_redteam_rejection_band
+    what: share of candidates rejected by red-team or gate. Sanity band, not a goal.
+    unit: percent
+    direction: band
+    band: [20, 80]
+    note: near 0 means the red-team is toothless; near 100 means the detector is too noisy
+    measure: eval/run_all.py
+
+  - id: M18_disconfirming_query_share
+    what: share of search queries tagged as looking for evidence against the hypothesis
+    unit: percent
+    direction: higher_better
+    lower: 20
+    target: 30
+    stretch: 40
+    measure: logs/queries.jsonl
+
+  # ---- versus existing approaches ----
+  - id: M19_baseline_advantage
+    what: mean (FAULTLINE composite minus best baseline composite) on a 0-6 blind rubric
+    unit: rubric_points
+    direction: higher_better
+    lower: 0.5
+    target: 1.5
+    stretch: 2.5
+    measure: eval/baselines/score.py (>=4 companies; reviewer did not build the system)
+
+  - id: M20_strong_label_precision
+    what: findings labelled Strong that the blind reviewer agrees are real and supported
+    unit: percent
+    direction: higher_better
+    lower: 80
+    target: 90
+    stretch: 100
+    measure: eval/baselines/score.py (report the count; expect small n)
+
+  - id: M21_window_stability
+    what: same verdict class when the history window used for the baseline changes (3 windows)
+    unit: percent
+    direction: higher_better
+    lower: 60
+    target: 80
+    stretch: 95
+    measure: eval/stability.py
+
+  # ---- practicality ----
+  - id: M22_live_latency_seconds
+    what: seconds from company input to dossier, with cached sources
+    unit: seconds
+    direction: lower_better
+    lower: 600
+    target: 240
+    stretch: 120
+    measure: eval/run_all.py
+
+  - id: M23_cost_per_run_usd
+    what: model API cost per company run
+    unit: usd
+    direction: lower_better
+    lower: 3.0
+    target: 1.0
+    stretch: 0.5
+    measure: logs/usage.jsonl

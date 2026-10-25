@@ -1,0 +1,7 @@
+{
+  "metric_id": "M01_reconciliation_rate",
+  "value": 100.0,
+  "unit": "percent",
+  "total_checks": 384,
+  "passed_checks": 384
+}

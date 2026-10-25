@@ -1,0 +1,18 @@
+{
+  "M02_claim_grounding_rate": {
+    "value": 100.0,
+    "unit": "percent",
+    "grounded_claims": 1080,
+    "total_claims": 1080
+  },
+  "M03_unsupported_claims": {
+    "value": 0,
+    "unit": "count",
+    "gate_passed": true
+  },
+  "M04_llm_authored_numbers": {
+    "value": 0,
+    "unit": "count",
+    "gate_passed": true
+  }
+}
