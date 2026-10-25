@@ -4,7 +4,9 @@
 
 FAULTLINE is an autonomous forensic agent designed to analyze listed banks, NBFCs, and financial institutions. It restates key asset quality and funding figures on a fixed, like-for-like basis, flags lasting divergences ("faults") between restated figures and reported figures, and tracks year-over-year "disclosure drift" (notes dropped or definitions altered). Faults that persist and are idiosyncratic (not shared by peers) trigger rigorous hypothesis generation, red-teaming, and validation gates before publication.
 
----
+🚀 Live Demo
+
+Access the application here:https://faultline-dashboard-vedant.streamlit.app/
 
 ## Core Architecture & Principles
 
